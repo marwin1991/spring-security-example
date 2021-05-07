@@ -1,4 +1,5 @@
 # spring-security-example
+Based on: https://spring.io/guides/tutorials/spring-security-and-angular-js/
 
 ### Start with downloading node
 ```shell
@@ -17,13 +18,38 @@ chmod +x ng
 ./ng --version
 ```
 
-### You can build continuously with
+### (You can build FrontEnd continuously with)
+
 ```shell
 ./ng build --watch
 ```
-Updates are built (quickly) and pushed to target/classes where they can be 
-picked up by Spring Boot. Your IDE might need to be tweaked to pick up the 
-changes automatically (Spring Tool Suite does it out of the box).
 
-That’s it really, but we can quickly look into a couple of extra things that 
-will get you off the ground quickly with Spring Boot and Angular.
+Updates are built (quickly) and pushed to target/classes where they can be picked up by Spring Boot. Your IDE might need
+to be tweaked to pick up the changes automatically (Spring Tool Suite does it out of the box).
+
+That’s it really, but we can quickly look into a couple of extra things that will get you off the ground quickly with
+Spring Boot and Angular.
+
+### Start project
+
+```shell
+mvn spring-boot:run
+```
+
+### Login
+
+Visit [localhost:8080](http://localhost:8080) and login to test if everything works (checkout application.properties)
+
+### Test with curl
+
+```shell
+curl localhost:8080/resource
+```
+
+What is the response?
+
+### Remember
+
+```shell
+You might need to force your browser to reload the static resources after you change them. In Chrome (and Firefox with a plugin) you can use "developer tools" (F12), and that might be enough. Or you might have to use CTRL+F5.
+```
