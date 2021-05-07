@@ -50,6 +50,13 @@ What is the response?
 
 ### Remember
 
-```shell
-You might need to force your browser to reload the static resources after you change them. In Chrome (and Firefox with a plugin) you can use "developer tools" (F12), and that might be enough. Or you might have to use CTRL+F5.
 ```
+You might need to force your browser to reload the static resources 
+after you change them. In Chrome (and Firefox with a plugin) 
+you can use "developer tools" (F12), and that might be enough. 
+Or you might have to use CTRL+F5.
+```
+
+### Now lets to really nice sing-in
+
+[click](https://spring.io/guides/tutorials/spring-security-and-angular-js/#_the_login_page_angular_js_and_spring_security_part_ii)
