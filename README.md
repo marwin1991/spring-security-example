@@ -59,4 +59,35 @@ Or you might have to use CTRL+F5.
 
 ### Now lets to really nice sing-in
 
+Some more readings are here:
 [click](https://spring.io/guides/tutorials/spring-security-and-angular-js/#_the_login_page_angular_js_and_spring_security_part_ii)
+
+### Types of authorization
+
+- https://blog.restcase.com/4-most-used-rest-api-authentication-methods/
+
+### Basic
+
+- https://medium.com/@mind_sFlight/basic-authentication-with-angular-7-and-spring-security-6fd140efc031
+- https://www.baeldung.com/spring-security-jdbc-authentication
+
+### JWT
+
+- https://bezkoder.com/angular-11-spring-boot-jwt-auth/
+- https://bezkoder.com/angular-11-jwt-auth/
+- https://bezkoder.com/spring-boot-security-postgresql-jwt-authentication/
+
+### Session
+
+- https://spring.io/projects/spring-session
+- https://www.baeldung.com/spring-session-jdbc
+
+### Remember Me
+
+- https://www.baeldung.com/spring-security-remember-me
+
+### Let's generate !!!
+
+- https://www.jhipster.tech/
+- https://start.jhipster.tech/generate-application
+- https://github.com/jhipster/generator-jhipster
