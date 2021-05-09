@@ -1,5 +1,6 @@
 # spring-security-example
-Based on: https://spring.io/guides/tutorials/spring-security-and-angular-js/
+Based on: https://spring.io/guides/tutorials/spring-security-and-angular-js/ \
+And: https://github.com/dsyer/spring-boot-angular
 
 ### Start with downloading node
 ```shell
