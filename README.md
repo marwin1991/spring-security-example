@@ -101,3 +101,4 @@ Some more readings are here:
 ### Beautify Your Github !!!
 
 - https://dev.to/philiphaines/beautify-your-github-40hh
+- https://github.com/anuraghazra/github-readme-stats
