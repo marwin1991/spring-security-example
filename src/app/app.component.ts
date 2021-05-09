@@ -1,27 +1,36 @@
-import {Component} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
+import { TokenStorageService } from './_services/token-storage.service';
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-    title = 'Spring Security Example';
-    data = {
-        id: undefined,
-        content: undefined
-    };
+export class AppComponent implements OnInit {
+    private roles: string[] = [];
+    isLoggedIn = false;
+    showAdminBoard = false;
+    showModeratorBoard = false;
+    username?: string;
 
-    constructor(private http: HttpClient) {
-        http.get('resource').subscribe(data => {
-            this.data.id = data['id']
-            this.data.content = data['content']
-        });
+    constructor(private tokenStorageService: TokenStorageService) { }
+
+    ngOnInit(): void {
+        this.isLoggedIn = !!this.tokenStorageService.getToken();
+
+        if (this.isLoggedIn) {
+            const user = this.tokenStorageService.getUser();
+            this.roles = user.roles;
+
+            this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
+            this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
+
+            this.username = user.username;
+        }
     }
 
-    logout() {
-        this.http.post('perform_logout', '').subscribe();
-        window.location.href = "http://localhost:8080";
+    logout(): void {
+        this.tokenStorageService.signOut();
+        window.location.reload();
     }
 }
