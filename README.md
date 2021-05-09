@@ -86,6 +86,12 @@ Some more readings are here:
 
 - https://www.baeldung.com/spring-security-remember-me
 
+### OAuth2 Login with Google/Facebook/GitHub
+
+- https://spring.io/guides/tutorials/spring-boot-oauth2/
+- https://www.baeldung.com/spring-security-5-oauth2-login
+- https://www.codejava.net/frameworks/spring-boot/oauth2-login-with-google-example
+
 ### Let's generate !!!
 
 - https://www.jhipster.tech/
