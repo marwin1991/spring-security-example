@@ -97,3 +97,7 @@ Some more readings are here:
 - https://www.jhipster.tech/
 - https://start.jhipster.tech/generate-application
 - https://github.com/jhipster/generator-jhipster
+
+### Beautify Your Github !!!
+
+- https://dev.to/philiphaines/beautify-your-github-40hh
