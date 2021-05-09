@@ -19,4 +19,9 @@ export class AppComponent {
             this.data.content = data['content']
         });
     }
+
+    logout() {
+        this.http.post('perform_logout', '').subscribe();
+        window.location.href = "http://localhost:8080";
+    }
 }

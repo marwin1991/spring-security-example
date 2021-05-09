@@ -19,7 +19,7 @@ chmod +x ng
 ./ng --version
 ```
 
-### (You can build FrontEnd continuously with)
+### Optional (You can build FrontEnd continuously with)
 
 ```shell
 ./ng build --watch
